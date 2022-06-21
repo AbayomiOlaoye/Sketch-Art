@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sketch Art</title>
+  <link rel="shortcut icon" href="./images/art-icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="head">
+    <h1>Sketch <span class="h1">Art</span></h1>
+    <h3>Etch-a-Sketch <img src="./images/teddy-face.png" alt="image of a teddy's face" width="52" height="52"></h3>
+  </div>
+  <div class="container">
+    <div class="controls">
+      <div class="size">
+        <p class="tog-btn">Number of box(es)</p>
+        <input type="number" name="gridSize" id="gridSize" placeholder="1-100" max="100">
+        <button type="button">Get Box</button>
+      </div>
+      <div class="color">
+        <label for="colorPicker">Color Pallette:
+        <input type="color" name="colorPicker" id="color-picker">
+        </label>
+        <p class="tog-btn random-color">Click and draw</p>
+        <button type="button">Use Random Color</button>
+      </div>
+      <p class="tog-btn clear-btn">Erase all your sketches</p>
+      <button type="button">Clear</button>
+      <p class="display-grid"></p>
+    </div>
+    <div class="game-grid">
+      <div class="modal-how-to">
+        <div class="card step-one">
+          <p>
+            Sketch Art empowers you to create your own experience and customize
+            your drawing space/boxes by making pixelated paintings by moving your 
+            mouse or taps on the screen
+          </p>
+          
+        </div>
+        <div class="card step-two">
+          <h4>Here is how-to:</h4>
+            <ul>
+              <li>Tap on the "Set Box" button and enter the number of boxes you want</li>
+              <li>Set your choice of color among the default gray, color picker or random color</li>
+              <li>Draw your thoughts by moving your mouse along paths/boxes.
+                  Mobile devices achieve this with just a tap on their screens
+              </li>
+              <li>Move your mouse anti-clockwise to erase unwanted parts of the sketch or use the 
+                "Clear" button to erase all.
+              </li>
+            </ul>
+        </div>
+        <div class="card step-three">
+          <p>...And that's all! Go try it and feel the art!!</p>
+          <p>I will be thankful for some stars and comments on my 
+            <a class="git" href="http://www.github.com/MindPrepDev">GitHub</a> if you can, please &#128591;
+          </p>
+        </div>
+        <div class="slider">
+          <div class="slidos"></div>
+          <div class="slidos"></div>
+          <div class="slidos"></div>
+        </div>
+      </div>
+    </div>
+    <div class="meme">
+      <img src="./images/meme.jpg" alt="meme holding a board" width="200px" height="300">
+      <div class="card-info">
+        <p>Like what you see?</p>
+        <div class="likes-info">
+          <a class="git" href="http://www.github.com/MindPrepDev"><img src="./images/github-icon.png" 
+            alt="github icon" width="32" height="32">
+          </a>
+          <a class="git" href="http://www.twitter.com/olaoyeelijah"><img src="./images/footer-twt.svg" 
+            alt="twitter icon" width="32" height="32">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="likes-info footer">
+    <a class="git" href="http://www.github.com/MindPrepDev"><img src="./images/github-icon.png" 
+      alt="github icon" width="32" height="32">
+    </a>
+    <a class="git" href="http://www.twitter.com/olaoyeelijah"><img src="./images/footer-twt.svg" 
+      alt="twitter icon" width="32" height="32">
+    </a>
+  </div>
+  &copy; Sketch Art 2022
+  <script src="main.js"></script>
+</body>
+</html>
