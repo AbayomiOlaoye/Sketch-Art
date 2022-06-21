@@ -1,3 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #acb4c2;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  text-align: center;
+  padding: 4%;
+  height: 200px;
+}
+.head h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.head h1 .h1 {
+  color: #acb4c2;
+  background-color: #111213;
+  padding: 0.2rem 0.9rem;
+}
+.head h3 {
+  position: relative;
+  color: #282A35;
+  font-size: 1.5rem;
+}
+.head h3 img {
+  position: absolute;
+  top: -50%;
+}
+@media screen and (max-width: 468px) {
+  .head {
+    padding: 10%;
+  }
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
+.container .modal-how-to {
+  display: flex;
+  gap: 1rem;
+}
+.container .modal-how-to .card {
+  font-size: 0.5rem;
+  font-family: sans-serif;
+  line-height: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #acb4c2;
+  padding: 1.5rem 0.5rem;
+  border-radius: 15px;
+  width: 35%;
+  text-align: center;
+}
+.container .modal-how-to .card h4 {
+  margin-bottom: 0.25rem;
+  text-decoration: underline;
+}
+.container .modal-how-to .step-one,
+.container .modal-how-to .step-three {
+  padding: 4.5rem 0.5rem;
+}
+.container .modal-how-to .slider {
+  display: flex;
+  background-color: #282A35;
+  height: 20%;
+}
 
 /*# sourceMappingURL=main.css.map */

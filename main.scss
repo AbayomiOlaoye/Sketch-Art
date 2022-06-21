@@ -1,0 +1,96 @@
+$bgColor: #acb4c2;
+$titleColors: #111213;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $bgColor;
+  font-family: monospace;
+  width: 100%;
+  height: 100%;
+}
+
+.head {
+  text-align: center;
+  padding: 4%;
+  height: 200px;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    .h1 {
+      color: $bgColor;
+      background-color: $titleColors;
+      padding: 0.2rem 0.9rem;
+    }
+  }
+
+  h3 {
+    position: relative;
+    color: #282A35;
+    font-size: 1.5rem;
+
+    img {
+      position: absolute;
+      top: -50%;
+    }
+  
+  }
+
+  @media screen and (max-width: 468px) {
+    padding: 10%;
+    
+  }
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .modal-how-to {
+    display: flex;
+    gap: 1rem;
+
+    .card {
+      font-size: 0.5rem;
+      font-family: sans-serif;
+      line-height: 0.8rem;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: $bgColor;
+      padding: 1.5rem 0.5rem;
+      border-radius: 15px;
+      width: 35%;
+      text-align: center;
+
+      h4 {
+        margin-bottom: 0.25rem;
+        text-decoration: underline;
+      }
+    }
+    .step-one,
+    .step-three {
+      padding: 4.5rem 0.5rem;
+    }
+
+    .slider {
+      display: flex;
+      background-color: #282A35;
+      height: 20%;
+    }
+  }
+}
